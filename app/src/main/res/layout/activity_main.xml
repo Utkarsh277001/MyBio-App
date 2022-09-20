@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.appcompat.widget.LinearLayoutCompat
+    style="bold"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backk"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        style="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Utkarsh Thakur"
+        android:textColor="#000"
+        android:textSize="25sp"
+        app:fontFamily="@font/carter_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hobbies"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#30ffffff"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter your hobbies"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColorHint="#000" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+
+        android:background="#000f"
+        android:text="Done"
+        android:drawableLeft="@drawable/ic_done"
+        />
+
+    <TextView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/archivo_black"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:text=""
+        android:textColor="#28AF5E"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingMultiplier="1.5"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:text="Hi \nMy name is Utkarsh Thakur and  i am currently undergrad at btech cs
+punjab technical university \n
+i am currently working on android development AND this is my second app as noob in this field ,long journey
+to go in the field of android and this app help me to go for that .\n\n
+In this app , i use scroll view for intro text , use visibility : gone for making text disappear
+and appear only when we call it \n
+In view , instead of using findViewById i use Data binding concept for making the app faster and smooth
+.In data binding , we create a binding object to which the view of the layout is attached . and i am currently using android dolphin version . I also use
+input method to remove keyboard whe we click the done buttom" />
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+</layout>
